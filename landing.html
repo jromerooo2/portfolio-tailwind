@@ -10,6 +10,7 @@
       sizes="76x76"
       href="./assets/img/apple-icon.png"
     />
+    <link rel="stylesheet" href="assets/css.css">
 
     <link
       rel="stylesheet"
@@ -24,10 +25,44 @@
     <title>PORTFOLIO</title>
   </head>
   <body class="text-gray-800 antialiased">
-  <script src="js/marvel.js"></script>
+    <script src="js/marvel.js"></script>
     <nav
       class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
     >
+    <!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+    </ul>
+  </div>
+</nav>
       <div
         class="container px-4 mx-auto flex flex-wrap items-center justify-between"
       >
@@ -235,13 +270,13 @@
           </svg>
         </div>
         <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-          <div class="container text-white content-start" style="font-family:poppins;">
+          <div class="container text-white" style="font-family:poppins;">
 
             <h1 class="text-white text-center text-4xl mb-4">
               What I've been to:
             </h1>
 
-            <div class="mb-5 ">
+            <div class="mb-5">
               <div class="border-r-2 border-gray-500 absolute h-full top-0" style="left: 15px"></div>
               <ul class="list-none m-0 p-0 ">
                 <li class="mb-2">
@@ -290,7 +325,7 @@
      
       <section class="pb-20 bg-gray-300 -mt-24">
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap">
+          <div class="flex flex-wrap" id="anime-cards">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
               <div
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
@@ -301,11 +336,12 @@
                   >
                     <i class="fas fa-award"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Awarded Agency</h6>
+                  <h6 class="text-xl font-semibold" id="anime-title">Awarded Agency</h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     Divide details about your product or agency work into parts.
                     A paragraph describing a feature will be enough.
                   </p>
+
                 </div>
               </div>
             </div>
