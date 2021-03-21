@@ -8,7 +8,9 @@
 
     };
 
-
+function reload(){
+        location.reload()
+}
 
 
     jikan();
